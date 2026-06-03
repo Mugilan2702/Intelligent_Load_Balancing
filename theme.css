@@ -1,0 +1,108 @@
+/* ═══════════════════════════════════════════
+   SmartBalance — Global Theme Variables
+   Include this in every JSP page
+═══════════════════════════════════════════ */
+
+/* DARK THEME (default) */
+:root,
+[data-theme="dark"] {
+  --bg:          #060810;
+  --surface:     #0d1117;
+  --surface2:    rgba(255,255,255,0.025);
+  --border:      rgba(255,255,255,0.07);
+  --border2:     rgba(255,255,255,0.04);
+  --text:        #e8eaf0;
+  --text2:       #fff;
+  --muted:       #6b7280;
+  --sidebar-bg:  rgba(13,17,23,0.95);
+  --nav-bg:      rgba(6,8,16,0.7);
+  --card-hover:  rgba(255,255,255,0.12);
+  --input-bg:    rgba(255,255,255,0.04);
+  --grid-line:   rgba(0,229,255,0.025);
+  --toggle-bg:   rgba(255,255,255,0.06);
+  --shadow:      0 40px 100px rgba(0,0,0,0.5);
+
+  --accent:      #00e5ff;
+  --accent2:     #7c3aed;
+  --green:       #22c55e;
+  --red:         #ff4d6d;
+  --yellow:      #fbbf24;
+
+  --chart-grid:  rgba(255,255,255,0.04);
+  --chart-tick:  #6b7280;
+  --chart-legend:#9ca3af;
+  --tooltip-bg:  #0d1117;
+  --tooltip-border: rgba(255,255,255,0.08);
+  --tooltip-title: #fff;
+}
+
+/* LIGHT THEME */
+[data-theme="light"] {
+  --bg:          #f0f4f8;
+  --surface:     #ffffff;
+  --surface2:    rgba(0,0,0,0.03);
+  --border:      rgba(0,0,0,0.09);
+  --border2:     rgba(0,0,0,0.05);
+  --text:        #111827;
+  --text2:       #111827;
+  --muted:       #6b7280;
+  --sidebar-bg:  rgba(255,255,255,0.97);
+  --nav-bg:      rgba(240,244,248,0.85);
+  --card-hover:  rgba(0,0,0,0.09);
+  --input-bg:    rgba(0,0,0,0.04);
+  --grid-line:   rgba(0,120,200,0.04);
+  --toggle-bg:   rgba(0,0,0,0.06);
+  --shadow:      0 20px 60px rgba(0,0,0,0.12);
+
+  --accent:      #0099bb;
+  --accent2:     #6d28d9;
+  --green:       #16a34a;
+  --red:         #dc2626;
+  --yellow:      #d97706;
+
+  --chart-grid:  rgba(0,0,0,0.06);
+  --chart-tick:  #9ca3af;
+  --chart-legend:#6b7280;
+  --tooltip-bg:  #ffffff;
+  --tooltip-border: rgba(0,0,0,0.1);
+  --tooltip-title: #111827;
+}
+
+/* ── THEME TRANSITION ── */
+html { transition: none; }
+body,
+.sidebar,
+.main,
+.server-card,
+.chart-card,
+.table-wrap,
+.card,
+.panel,
+.panel-left,
+.panel-right,
+nav {
+  transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* ── THEME TOGGLE BUTTON (shared across all pages) ── */
+.theme-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--toggle-bg);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 0.45rem 1rem;
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.theme-toggle-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.theme-icon { font-size: 0.95rem; }
