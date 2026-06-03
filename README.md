@@ -152,7 +152,7 @@ INSERT INTO servers (name, category) VALUES
 - Java 11+
 - Maven 3.6+
 - MySQL 8.x
-- GlassFish 7 or Payara Server
+- GlassFish 21 or Payara Server
 
 ### Steps
 
@@ -177,21 +177,6 @@ mvn clean package
 
 # 6. Access the app
 # http://localhost:8080/Intelligent_Load_Balancing-1.0-SNAPSHOT/home.jsp
-```
-
----
-
-## 📸 Screenshots
-
-> *(Add screenshots of Home page, Dashboard, Admin panel, and Attack Monitor here)*
-
----
-
-## 👨‍💻 Team
-
-> *(Add your team member names and roll numbers here)*
-
----
 
 ## 📄 License
 
